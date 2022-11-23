@@ -37,7 +37,7 @@
 
 
     <EditText
-        android:id="@+id/etidseller"
+        android:id="@+id/etidclient"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -50,7 +50,7 @@
         />
 
     <EditText
-        android:id="@+id/etpassword"
+        android:id="@+id/etclientpassword"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -66,15 +66,12 @@
         android:id="@+id/btncontinue"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Continue"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/main"
+        android:text="Continue"
 
         />
-
-
-
 
     <Button
         android:id="@+id/btnregister"
