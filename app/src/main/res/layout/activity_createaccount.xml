@@ -21,7 +21,139 @@
         android:paddingTop="5dp"
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Identification"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        />
+    <TextView
+        android:id="@+id/tvidclient"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        />
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        />
+    <TextView
+        android:id="@+id/tvfullnames"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Number"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        />
+    <EditText
+        android:id="@+id/etaccountnumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Account Number"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_baseline_numbers_24"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creation Date"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        />
+    <EditText
+        android:id="@+id/etdatecreation"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Date"
+        android:gravity="center"
+        android:inputType="date"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_baseline_edit_calendar_24"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Initial Deposit"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        />
+    <EditText
+        android:id="@+id/etinitialdeposit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Initial Amount"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/ic_baseline_attach_money_24"
+        />
+
+    <Button
+        android:id="@+id/btnsaveaccount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/main"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/btntransactions"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Transactions"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/main"
+
+        />
 
 
 </LinearLayout>

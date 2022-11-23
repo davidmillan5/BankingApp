@@ -21,7 +21,15 @@ public class Registration extends AppCompatActivity{
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
+        Button btnrcreateaccount = findViewById(R.id.btncreateaccount);
 
+        btnrcreateaccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Registration.this,CreateAccount.class);
+                startActivity(i);
+            }
+        });
 
 
 
