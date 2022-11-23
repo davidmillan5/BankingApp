@@ -1,8 +1,5 @@
 package com.example.sistemabancario;
 
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -10,28 +7,29 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class CreateAccount extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Transaction extends AppCompatActivity {
 
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_createaccount);
+        setContentView(R.layout.activity_transaction);
 
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        Button btntransactions = findViewById(R.id.btntransactions);
+        Button btnback = findViewById(R.id.btnback);
 
-        btntransactions.setOnClickListener(new View.OnClickListener() {
+        btnback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(CreateAccount.this,Transaction.class);
+                Intent i = new Intent(Transaction.this,MainActivity.class);
                 startActivity(i);
             }
         });
-
 
 
 
