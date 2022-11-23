@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Bank of Eastern Oregon</string>
+    <string name="greetings">Hi! If you are not register please go to the register icon...</string>
+</resources>

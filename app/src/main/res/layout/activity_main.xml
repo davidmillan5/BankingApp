@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/app_name"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:textSize="30dp"
+        android:background="@color/main"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:paddingTop="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/greetings"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textFontWeight="900"
+
+        />
+
+
+    <EditText
+        android:id="@+id/etidseller"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="id"
+        android:inputType="number"
+        android:gravity="center"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Password"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <Button
+        android:id="@+id/btncontinue"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/main"
+
+        />
+
+
+
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/main"
+
+        />
+
+
+
+</LinearLayout>
