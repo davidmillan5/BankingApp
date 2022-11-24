@@ -30,18 +30,19 @@
         android:layout_marginTop="10dp"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="26dp"
+        android:textSize="18dp"
         />
-    <TextView
-        android:id="@+id/tvaccountnumber"
+
+
+    <EditText
+        android:id="@+id/etaccountnumber"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:gravity="center"
-        android:drawableStart="@drawable/ic_baseline_numbers_24"
         android:layout_marginTop="10dp"
-        />
-
+        android:drawableStart="@drawable/ic_baseline_numbers_24"
+        android:gravity="center"
+        android:hint="Account Number" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -51,7 +52,7 @@
         android:layout_marginTop="10dp"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="26dp"
+        android:textSize="18dp"
         />
     <EditText
         android:id="@+id/etdatetransaction"
@@ -61,74 +62,59 @@
         android:hint="Date"
         android:gravity="center"
         android:inputType="date"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:layout_marginTop="6dp"
         android:drawableStart="@drawable/ic_baseline_edit_calendar_24"
         />
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Time"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
+        android:text="Time"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="26dp"
-        />
+        android:textSize="18dp" />
+
     <EditText
         android:id="@+id/ettimetransaction"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="Time"
-        android:gravity="center"
-        android:inputType="date"
-        android:textSize="20dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginTop="2dp"
         android:drawableStart="@drawable/ic_baseline_access_time_24"
+        android:gravity="center"
+        android:hint="Time"
+        android:inputType="date"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction Type"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
         />
 
 
-    <RadioGroup
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/ettransactiontype"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp">
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Transaction"
-            android:layout_gravity="center"
-            android:layout_marginBottom="6dp"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="26dp"
-            />
-
-        <RadioButton
-            android:id="@+id/rbdeposit"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Deposit"
-            android:textColor="@color/black"
-            android:textSize="26dp"
-            android:layout_gravity="center"
-            />
-
-        <RadioButton
-            android:id="@+id/rbwithdrawal"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="Withdraw"
-            android:textColor="@color/black"
-            android:textSize="26dp"
-            android:layout_gravity="center"
-            />
+        android:gravity="center"
+        android:hint="Transaction Type"
+        android:inputType="text"
+        android:textSize="18dp" />
 
 
-    </RadioGroup>
 
 
 
@@ -140,7 +126,7 @@
         android:layout_marginTop="10dp"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="26dp"
+        android:textSize="18dp"
         />
 
 
@@ -154,7 +140,24 @@
         android:gravity="center"
         android:hint="Transaction Value"
         android:inputType="number"
-        android:textSize="20dp" />
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Account Statement"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvaccountstatement"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
 
     <Button
         android:id="@+id/btnsaveaccount"
